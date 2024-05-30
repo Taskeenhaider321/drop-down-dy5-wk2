@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./output.css">
+    <title>Intro Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,body{
+        width: 100%; 
+        height: 100%;
+        background-color: #FAFAFA;
+        font-family: 'poppins';
+        /* overflow-y: hidden; */
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+    .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: white;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+.dropdown:hover .dropdown-content {display: block;}
+    </style>
+</head>
+<body>
+<div class="nav-div bg-slate-50">
+    <nav>
+        <div class="w-full flex flex-wrap items-center justify-between mx-auto px-6 mt-3">
+          <div class="flex items-center">
+            <a href="">
+              <img src="./images/logo.svg" alt="Snap Logo" />
+            </a>
+            <div class="text-lg md:flex  md:items-center md:ml-4">
+              <ul id="nav-links" class="hidden md:flex flex-col pt-3 md:flex-row md:space-x-8 rtl:space-x-reverse">
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                <li>
+                <div class="dropdown">
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <div class="animate"><a href="#" class="dropbtn text-[#757575] hover:font-bold hover:text-black no-underline">Features</a></div>
+                        <div class="animate"><a href=""><img src="./images/icon-arrow-down.svg" class="dropbtn" alt=""></a></div>  
+                    </div>
+                  <div class="dropdown-content rounded-lg text-center">
+                    <div class="drop-todo flex flex-row items-center justify-start hover:bg-[#FAFAFA]">
+                        <div><a href=""><img src="./images/icon-todo.svg" alt=""></a></div>
+                        <div><a href="#">TodoList</a></div>
+                    </div>
+                    <div class="drop-todo flex flex-row items-center justify-start hover:bg-[#FAFAFA]">
+                        <div><a href=""><img src="./images/icon-calendar.svg" alt=""></a></div>
+                        <div><a href="#">Calenders</a></div>
+                    </div>
+                    <div class="drop-todo flex flex-row items-center justify-start hover:bg-[#FAFAFA]">
+                        <div><a href=""><img src="./images/icon-reminders.svg" alt=""></a></div>
+                        <div><a href="#">Reminders</a></div>
+                    </div>
+                    <div class="drop-todo flex flex-row items-center justify-start hover:bg-[#FAFAFA]">
+                        <div><a href=""><img src="./images/icon-planning.svg" alt=""></a></div>
+                        <div><a href="#">Plannings</a></div>
+                    </div>
+                  </div>
+                </div>
+                </li>
+                              
+                <li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="flex flex-row items-center justify-center gap-2">
+                                <div class="animate"><a href="#" class="dropbtn text-[#757575] hover:font-bold hover:text-black no-underline">Company</a></div>
+                                <div class="animate"><a href=""><img src="./images/icon-arrow-down.svg" class="dropbtn" alt=""></a></div>  
+                            </div>
+                            <div class="dropdown-content rounded-lg text-left pl-5">
+                                <a href="#">History</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+                </div>
+                <li>
+                <div class="animate">
+                  <a href="#" class="text-[#757575] hover:font-bold hover:text-black no-underline">Careers</a>
+                </div>
+                </li>
+                <li>
+                <div class="animate">
+                  <a href="#" class="text-[#757575] hover:font-bold hover:text-black no-underline">About</a>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:order-1 text-lg flex md:space-x-8">
+            <a href="#" class="animate text-[#757575] hover:font-bold hover:text-black no-underline hidden md:inline-block">Login</a>
+            <button class="animate border-2 bg-transparent text-[#757575] hover:font-bold hover:text-black hover:border-black border-[#757575] rounded-xl px-3 mt-0 hidden md:inline-block">Register</button>
+        </div>
+        </div>
+      </nav>
+<div class="w-full container flex flex-col-reverse lg:flex-row justify-center md:gap-72 pt-5 items-center">
+  <div class="">
+      <p class="text-7xl font-extrabold">Make <br> remote work</p>
+      <p class="text-left text-[#757575] text-lg">Get your team in sync, no matter your location. <br>Streamline processes, create team rituals, and <br> watch productivity soar.</p>
+      <button class=" animate bg-black text-white hover:bg-slate-400 rounded-xl py-2 px-4 mt-4">Learn more</button>
+
+      <div class="flex justify-center items-center gap-6 md:ml-9 mt-20">
+          <img src="./images/client-databiz.svg" alt="Image 1">
+          <img src="./images/client-audiophile.svg" alt="Image 2">
+          <img src="./images/client-meet.svg" alt="Image 3">
+          <img src="./images/client-maker.svg" alt="Image 4">
+      </div>
+  </div>
+  <div class="">
+      <img src="./images/image-hero-desktop.png" class="object-contain w-[450px]" alt="desktop-img" >
+  </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</body>
+</html>
